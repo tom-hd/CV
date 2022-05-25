@@ -7,7 +7,8 @@ CV_DIR = $(DOCS_DIR)/cv
 RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
 CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
 
-docs: $(foreach x, coverletter cv resume, $x.pdf)
+docs: $(foreach x, resume, $x.pdf)
+# docs: $(foreach x, coverletter cv resume, $x.pdf)
 
 resume.pdf: $(DOCS_DIR)/resume.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(DOCS_DIR) $<

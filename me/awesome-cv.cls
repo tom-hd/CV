@@ -690,6 +690,7 @@
       {\multicolumn{2}{L{17.0cm}}{\subdescriptionstyle{#4}} \\}
   \end{tabular*}
   \vspace{-7.5mm}
+}
 
 
 
